@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+html {
+    font-size: 10px;
+    /* font-familyは字体の指定 */
+}
+
+body {
+    font-size: 2.0rem;
+	font-family: Arial, "YuGothic Medium","Yu Gothic Medium","游ゴシック Medium","游ゴシック体 Medium",YuGothic,"Yu Gothic","游ゴシック","游ゴシック体","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    height: 100px;
+    width: 100vw;
+    /* text-align: center; */
+    align-items: center;
+    /* font-family:'Rounded M+ 1c ', sans-serif; */
+}
+
+#headerIn {
+    display: flex;
+    align-items: center;
+}
+
+#titlePhoto {
+    height: 90px;
+    margin-left: 20px;
+}
+
+#header-list {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    /* margin-left: auto; */
+    /* margin-right: 20px; */
+    font-size: 2.5rem;
+}
+
+#header-list a {  
+  /* aタグにhoverしたら下線 */
+  text-decoration: none; /* デフォルトの下線を非表示にする */
+  color: #000;
+  background-image: linear-gradient(90deg, rgb(97, 36, 2), rgb(97, 36, 2)); /* 線の色 */
+  background-repeat: no-repeat;
+  background-position: center bottom; /* 線の起点を中央・下に設定 */
+  background-size: 0 0.2rem; /* 線の横幅を0、縦幅を1pxに */
+  transition: background-size 0.4s; /* 線を伸ばすアニメーション実行時間を指定 */
+}
+
+#header-list a:hover {
+    /* aタグにhoverしたら下線 */
+    color: rgb(97, 36, 2);
+    background-size: 100% 0.2rem; /* 線の横幅を100%にする */
+}
+
+#header-list li {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+main {
+    margin-top: 10rem;
+    color: #fff;
+    background-color: rgba(97, 21, 2, 0.825);
+}
+
+
+#lb-roulette {
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+    /* letter-spacingで文字の間隔指定 */
+    font-family: 'Kaushan Script', cursive;
+}
+
+#lb-roulette h1 {
+    font-size: 6.0rem;
+    font-weight: bold;
+    padding-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+#type {
+    height: 4rem;
+    width: 20vw;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(97, 36, 2);
+    text-align: center;
+    border: solid 0.3rem rgb(97, 36, 2);
+}
+
+
+#roulette {
+    /* ルーレットの中央寄せ */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80.0rem;
+    /* 表のセルの間隔を開けたい */
+    /* ただし間隔を開けると線が引けない */
+    /* 列全体ではなくセルを指定すれば可能！ */
+    border-collapse: separate;
+    border-spacing: 1.0rem;
+}
+
+#roulette th{
+    font-size: 4.5rem;
+    padding-top: 1.0rem;
+    padding-bottom: 2.0rem;
+    vertical-align: middle;
+}
+
+#roulette td{
+    font-size: 5.0rem;
+    height: 5.0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    vertical-align: middle;
+}
+
+#roulette tr:last-child td {
+    border-bottom: solid 0.3rem #fff;
+}
+
+
+#roulette span{
+    font-size: 5.0rem;
+}
+
+/* ボタンCSS */
+button {
+    /* ↓カーソルを置くと指の形になる */
+    cursor: pointer;
+    font-size: 3.0rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Kaushan Script', cursive;
+    /* padding: 0.4rem; */
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    color: rgb(97, 36, 2);
+    background-color: #fff;
+    border: solid 0.3rem rgb(97, 36, 2);
+}
+
+/* 最強のボタンcssサイト */
+/* https://jajaaan.co.jp/css/button/ */
+
+
+#map {
+    text-align: center;
+    margin-top: 6.0rem;
+    margin-bottom: 3.0rem;
+    padding-top: 12rem;
+}
+
+#map h1, #reserve h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#map p {
+    margin-top: 3rem;
+}
+
+.blank {
+    height: 20rem;
+}
+
+#reserve {
+    text-align: center;
+    margin-top: 6.0rem;
+    /* margin-bottom: 3.0rem; */
+    padding-top: 12rem;
+}
+
+#reserve p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#reserve a {
+    color: #fff;
+    /* border-bottom: solid 0.2rem #fff; */
+}
+
+#footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#footer {
+    align-items: center;
+}
